@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetingController {
 
 	private static final String template = "Welcome to our site, %s!";
+	private static final String footer = "Made by us";
 	private final AtomicLong counter = new AtomicLong();
 	
 	@RequestMapping("/greeting")
